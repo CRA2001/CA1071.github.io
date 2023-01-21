@@ -1,9 +1,26 @@
 <!DOCTYPE html>
     <html>
-        <head></head>
+        <head>
+            <!-- vue.js cdn -->
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js" ></script>
+        </head>
         <body>
             <title>Groupwork 2 - CST3145</title>
             <h1> Groupwork 2</h1>
-            <script src="script.js"></script>
+            <div id="app">
+                {{lesson}}
+            </div>
+            //vue.js code
+            <script src="script.js">
+               var app = new Vue({
+                el:"#app",
+                data:{
+                    lesson:[],
+                },
+                    created: 
+
+                    },
+               }) 
+            </script>
         </body>
     </html>
