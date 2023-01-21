@@ -18,7 +18,23 @@
                     lesson:[],
                 },
                     created: 
-
+                    function(){
+                        fetch('http://localhost:3000/lessons').then(
+                            function(response){
+                                function(json){
+                                    store.lesson = json;
+                                    console.log(json);
+                                }
+                            }
+                        ),
+                        fetch('http://localhost:3000/users').then(
+                            function(response){
+                                function(json){
+                                    store.lesson = json;
+                                    console.log(json);
+                                }
+                            }
+                        )
                     },
                }) 
             </script>
